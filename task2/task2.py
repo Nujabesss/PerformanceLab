@@ -12,9 +12,9 @@ while True:
         break
     if char.isdigit():
         cord_cirle.append(char)
-x=int(cord_cirle[0])
-y=int(cord_cirle[1])
-r=int(cord_cirle[2])
+x=float(cord_cirle[0])
+y=float(cord_cirle[1])
+r=float(cord_cirle[2])
 for line in open(dot):
     x1, y1= map(float, line.split(' '))
     if number(x,y,x1,y1)>r**2:
@@ -24,3 +24,4 @@ for line in open(dot):
     else:
         print (1)
  
+
